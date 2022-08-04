@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Josefin+Sans:ital@1&family=Kanit:wght@300&family=Oleo+Script+Swash+Caps&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+}
+
+header {
+    background: linear-gradient(-45deg, #48fb34, #3bfb34, #0bc730 ,#1cc310);
+    background-size: 400% 400%;
+    animation: change 3s ease-in-out infinite;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 0 2rem;
+}
+h1{
+    font-size: 2.3rem;
+}
+.heroText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+textarea{
+    width: 60rem;
+    max-width: 60rem;
+    height: 20vh;
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+button{
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(-45deg, #48fb34, #3bfb34, #0bc730 ,#1cc310);
+    background-size: 400% 400%;
+    animation: change 3s ease-in-out infinite;
+    padding: 1rem;
+    border-radius: .4rem;
+    font-style: italic;
+    color: #000;
+    cursor: pointer;
+    margin: 2rem 1rem;
+}
+button:hover{
+    color: grey;
+}
+.heading{
+    font-size: 2rem;
+    padding-bottom: .8rem;
+}
+#output{
+    width: 60rem;
+    height: 10rem;
+    overflow: scroll;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+
+}
+
+
+footer{
+    background: linear-gradient(-45deg, #48fb34, #3bfb34, #0bc730 ,#1cc310);
+    background-size: 400% 400%;
+    animation: change 3s ease-in-out infinite;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer h1{
+    padding-bottom: 1rem;
+}
+footer p{
+    font-size: 1.8rem;
+    max-width: 600px;
+    margin: auto;
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+@media(max-width:700px){
+    html{
+        font-size: 58%;
+    }
+}
+
+ @media(max-width:590px){
+    textarea{
+     width: 100%;
+    }
+    #output{
+     width: 100%;
+    }
+ }
